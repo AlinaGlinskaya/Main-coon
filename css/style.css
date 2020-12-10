@@ -1,0 +1,74 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Light.woff2"),
+			 url("../fonts/Roboto-Light.woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Regular.woff2"),
+			 url("../fonts/Roboto-Regular.woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Medium.woff2"),
+			 url("../fonts/Roboto-Medium.woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Bold.woff2"),
+			 url("../fonts/Roboto-Bold.woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Yeseva One";
+	src: url("../fonts/YesevaOne-Regular.woff2"),
+			 url("../fonts/YesevaOne-Regular.woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
