@@ -72,3 +72,126 @@ img {
 a {
 	text-decoration: none;
 }
+
+.container {
+	max-width: 1300px;
+	padding: 0 46px;
+	margin: 0 auto;
+}
+
+.social {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*Header*/
+
+.page-header {
+	min-height: 684px;
+	background-color: #151313;
+	background-image: url("../img/main-cat-desktop@1x.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 684px auto;
+}
+
+.webp .page-header {
+	background-image: url("../img/main-cat-desktop@1x.webp");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+	.page-header {
+		background-image: url("../img/main-cat-desktop@2x.png");
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+	.webp .page-header {
+		background-image: url("../img/main-cat-desktop@2x.webp");
+	}
+}
+
+.logo-icon {
+	fill: #a07b50;
+	stroke: #1f1c1d;
+	stroke-width: 0.8;
+}
+
+.page-header__logo-icon {
+	display: block;
+	box-sizing: content-box;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.page-header__wrapper {
+	display: flex;
+}
+
+.social__icon {
+	fill: #ffffff;
+}
+
+.page-header__social {
+	position: relative;
+	padding-top: 478px;
+	display: flex;
+	flex-direction: column;
+}
+
+.page-header__social::after {
+	position: absolute;
+	top: 372px;
+	left: 7px;
+	content: "";
+	width: 1px;
+	height: 77.5px;
+	background-color: rgba(255, 255, 255, 0.2)
+}
+
+.social__item {
+	width: 20px;
+	height: 26px;
+}
+
+.page-header__location, .page-header__description {
+	font-size: 16px;
+	line-height: 24px;
+	color: #a07b50;
+	font-weight: 400;
+}
+
+.page-header__location {
+	margin-bottom: 0;
+}
+
+.page-header__title {
+	width: 400px;
+	margin-top: 20px;
+	margin-bottom: 18px;
+	font-family: "Yeseva One", "Georgia", serif;
+	font-size: 52px;
+	line-height: 58px;
+	font-weight: 400;
+	transform: translateX(-2px);
+}
+
+.page-header__button {
+	display: block;
+	width: 200px;
+	height: 52px;
+	padding: 17px 0 0 35px;
+	color: #ffffff;
+	border: 1px solid #a07b50;
+}
+
+.page-header__description {
+	width: 270px;
+	margin-bottom: 49px;
+}
+
+.page-header__content {
+	padding-top: 90px;
+	padding-left: 105px;
+}
