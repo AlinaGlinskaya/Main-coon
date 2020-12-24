@@ -176,6 +176,7 @@
 				<ul class="page-header__social social">
 					<li class="social__item">
 						<a class="social__link" href="#">
+							<span class="visually-hidden">ВКонтакте</span>
 							<svg class="social__icon social__icon--vk" width="13" height="8">
 								<use xlink:href="#icon-vk"></use>
 							</svg>
@@ -183,6 +184,7 @@
 					</li>
 					<li class="social__item">
 						<a class="social__link" href="#">
+							<span class="visually-hidden">Твиттер</span>
 							<svg class="social__icon social__icon--tw" width="16" height="11">
 								<use xlink:href="#icon-tw"></use>
 							</svg>
@@ -190,6 +192,7 @@
 					</li>
 					<li class="social__item">
 						<a class="social__link" href="#">
+							<span class="visually-hidden">Фейсбук</span>
 							<svg class="social__icon social__icon--fb" width="6" height="12">
 								<use xlink:href="#icon-fb"></use>
 							</svg>
@@ -205,6 +208,55 @@
 			</div>
 		</div>
 	</header>
+
+	<main>
+		<section class="pets">
+			<div class="pets__wrapper section__wrapper container">
+				<h2 class="pets__title title">Питомцы</h2>
+				<p class="pets__description">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
+				<ul class="pets__list">
+					<li class="pets__item">
+						<a class="pets__link pets__link--active" href="#pets-images-1">Коты</a>
+					</li>
+					<li class="pets__item">
+						<a class="pets__link" href="#pets-images-2">Кошки</a>
+					</li>
+					<li class="pets__item">
+						<a class="pets__link" href="#pets-images-3">Котята</a>
+					</li>
+				</ul>
+				<div class="pets__tab" id="#cats">
+					<div class="pets__gallery gallery">
+						<div class="gallery__item gallery__item--top">
+							<picture>
+								<source type="image/webp" srcset="img/pets-list-1-desktop@1x.webp 1x, img/pets-list-1-desktop@2x.webp 2x">
+									<img class="gallery__item-image gallery__item-image--top" src="img/pets-list-1-desktop@1x.png" srcset="img/pets-list-1-desktop@2x.png 2x" width="518" height="320">
+							</picture>
+						</div>
+						<div class="gallery__item gallery__item--bottom">
+							<picture>
+								<source type="image/webp" srcset="img/pets-list-2-desktop@1x.webp 1x, img/pets-list-2-desktop@2x.webp 2x">
+									<img class="gallery__item-image" src="img/pets-list-2-desktop@1x.png" srcset="img/pets-list-2-desktop@2x.png 2x" width="776" height="362">
+							</picture>
+						</div>
+						<div class="gallery__item gallery__item--center">
+							<picture>
+								<source type="image/webp" srcset="img/pets-list-3-desktop@1x.webp 1x, img/pets-list-3-desktop@2x.webp 2x">
+									<img class="gallery__item-image" src="img/pets-list-3-desktop@1x.png" srcset="img/pets-list-3-desktop@2x.png 2x" width="469" height="483">
+							</picture>
+						</div>
+					</div>
+				</div>
+				<button class="pets__slider-button slider__button slider__button--prev" type="button">
+					<span class="visually-hidden">Предыдущий слайд</span>
+				</button>
+				<button class="pets__slider-button slider__button slider__button--next" type="button">
+					<span class="visually-hidden">Следующий слайд</span>
+				</button>
+				<a class="pets__button" href="#">Смотреть больше</a>
+			</div>
+		</section>
+	</main>
 
 	<script src="js/test-webp.js"></script>
 </body>

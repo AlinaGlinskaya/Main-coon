@@ -79,6 +79,32 @@ a {
 	margin: 0 auto;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+}
+
+.section__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	font-family: "Yeseva One", "Georgia", serif;
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 400;
+}
+
 @media (max-width: 1023px) {
 	.container {
 		padding: 0 27px;
@@ -237,6 +263,7 @@ a {
 @media (max-width: 1023px) {
 	.page-header__social {
 		flex-direction: row;
+		flex-wrap: wrap;
 		padding-top: 0;
 		padding-left: 14px;
 		margin-top: 60px;
@@ -399,5 +426,114 @@ a {
 @media (max-width: 767px) {
 	.page-header__content {
 		padding-top: 30px;
+	}
+}
+
+/*Pets*/
+
+.pets {
+	min-height: 1060px;
+	background-color: #1f1c1d;
+}
+
+.pets__title {
+	margin-bottom: 22px;
+}
+
+.pets__description {
+	width: 520px;
+	margin-top: 0;
+	margin-bottom: 47px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #a07b50;
+	text-align: center;
+}
+
+.pets__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	width: 262px;
+}
+
+.pets__item {
+	width: auto;
+	margin-right: 45px;
+}
+
+.pets__link {
+	font-size: 18px;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.2);
+}
+
+.pets__link--active {
+	color: #ffffff;
+}
+
+.pets__slider-button {
+	display: none;
+}
+
+.pets__button {
+	width: 200px;
+	margin-top: 19px;
+	padding: 18px 15px 16px 39px;
+	color: #ffffff;
+	border: 1px solid #a07b50;
+}
+
+.pets__wrapper {
+	padding-top: 193px;
+}
+
+.pets__tab {
+	margin-top: 46px;
+}
+
+.gallery__item {
+	width: 519px;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.gallery__item--top {
+	height: 214px;
+}
+
+.gallery__item-image {
+	object-fit: cover;
+}
+
+.gallery__item-image--top {
+	height: 240px;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 1086px;
+	height: 522px;
+	align-content: center;
+	padding-left: 30px;
+}
+
+.gallery__item--center {
+	margin-left: 35px;
+	height: 522px;
+	margin-bottom: 0;
+}
+
+@media (min-width: 1023px) and (max-width: 1090px) {
+	.gallery {
+		width: auto;
+	}
+
+	.gallery__item {
+		width: 400px;
 	}
 }
