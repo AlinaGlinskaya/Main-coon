@@ -105,6 +105,12 @@ a {
 	font-weight: 400;
 }
 
+@media (max-width: 767px) {
+	.title {
+		font-size: 28px;
+	}
+}
+
 @media (max-width: 1023px) {
 	.container {
 		padding: 0 27px;
@@ -474,7 +480,7 @@ a {
 	color: #ffffff;
 }
 
-.pets__slider-button {
+.pets__gallery-button {
 	display: none;
 }
 
@@ -486,11 +492,19 @@ a {
 	border: 1px solid #a07b50;
 }
 
+@media (max-width: 1023px) {
+	.pets__button {
+		margin-top: 39px;
+	}
+}
+
 .pets__wrapper {
+	position: relative;
 	padding-top: 193px;
 }
 
 .pets__tab {
+	position: relative;
 	margin-top: 46px;
 }
 
@@ -535,5 +549,167 @@ a {
 
 	.gallery__item {
 		width: 400px;
+	}
+}
+
+@media (max-width: 1023px) {
+	.gallery__item {
+		position: absolute;
+		margin-bottom: 0;
+		height: 197px;
+		width: 400px;
+	}
+
+	.gallery__item--center {
+		left: -251px;
+		top: 11px;
+		height: 520px;
+		width: 497px;
+		margin-left: 0;
+		z-index: 10;
+	}
+
+	.gallery__item-image {
+		height: 197px;
+	}
+
+	.gallery__item--bottom {
+		bottom: 164px;
+		left: -313px;
+		z-index: 2;
+	}
+
+	.gallery__item--top {
+		left: -113px;
+		bottom: 164px;
+		z-index: 1;
+	}
+
+	.gallery__item--center .gallery__item-image {
+		height: 495px;
+		width: 474px;
+	}
+
+	.gallery {
+		width: auto;
+		flex-direction: row-reverse;
+		padding-left: 0;
+	}
+
+	.pets__gallery-button {
+		position: absolute;
+		top: 556px;
+		display: block;
+		width: 15px;
+		height: 30px;
+		background-color: transparent;
+		border: none;
+		background-repeat: no-repeat;
+	}
+
+	.pets__gallery-button.slider-button--prev {
+		background-image: url("../img/arrowPrev.svg");
+		left: 27px;
+	}
+
+	.pets__gallery-button.slider-button--next {
+		background-image: url("../img/arrowNext.svg");
+		right: 27px;
+	}
+
+	.pets__wrapper {
+		padding-top: 71px;
+	}
+
+	.pets__title {
+		width: 185px;
+	}
+
+	.pets__description {
+		padding-right: 6px;
+		margin-bottom: 48px;
+		line-height: 25px;
+	}
+
+	.pets__item {
+		margin-right: 44px;
+	}
+
+	.pets__tab {
+		margin-top: 29px;
+	}
+}
+
+@media (max-width: 767px) {
+	.gallery__item--top, .gallery__item--bottom {
+		display: none;
+	}
+
+	.pets__description {
+		width: 290px;
+		padding-right: 0;
+		margin-bottom: 32px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.pets__wrapper {
+		padding-top: 26px;
+	}
+
+	.pets__title {
+		width: 142px;
+		margin-bottom: 17px;
+	}
+
+	.gallery__item--center {
+		position: static;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	.gallery__item--center .gallery__item-image {
+		width: 100%;
+		height: auto;
+		min-height: 248px;
+	}
+
+	.gallery {
+		height: auto;
+	}
+
+	.pets__link {
+		font-size: 16px;
+	}
+
+	.pets__list {
+		width: 231px;
+	}
+
+	.pets__tab {
+		margin-top: 37px;
+		width: 100%;
+	}
+
+	.pets__gallery-button {
+		top: 62.5%;
+		background-size: 65%;
+	}
+
+	.pets__gallery-button.slider-button--prev {
+		left: 14px;
+	}
+
+	.pets__gallery-button.slider-button--next {
+		right: 9px;
+	}
+
+	.pets__button {
+		width: 142px;
+		padding: 13px 5px 11px 17px;
+		font-size: 12px;
+		font-weight: 700;
 	}
 }
