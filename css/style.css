@@ -712,4 +712,147 @@ a {
 		font-size: 12px;
 		font-weight: 700;
 	}
+
+	.pets {
+		min-height: 760px;
+	}
+}
+
+/*Breed-features*/
+
+.breed-features {
+	min-height: 986px;
+	margin-top: -1px;
+	background-color: #1f1c1d;
+}
+
+.breed-features__wrapper {
+	padding-top: 32px;
+}
+
+.breed-features__title {
+	width: 450px;
+	padding-left: 37px;
+	margin-bottom: 4px;
+}
+
+.breed-features__description {
+	width: 740px;
+	color: #a07b50;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	transform: translateX(-1px);
+}
+
+.breed-features__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	height: 0;
+	width: 0;
+}
+
+.breed-features__item {
+	position: relative;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+}
+
+.breed-features__item::after {
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #a07b50;
+}
+
+.breed-features__item--livable {
+	width: 255px;
+	font-size: 14px;
+	top: -467px;
+	left: -236px;
+	text-align: right;
+}
+
+.breed-features__item--livable::after {
+	top: 7px;
+	right: -39px;
+}
+
+.breed-features__item--trainable {
+	top: -400px;
+	left: 655px;
+	width: 183px;
+}
+
+@media (min-width: 1024px) and (max-width: 1125px) {
+	.breed-features__item--trainable {
+		width: auto;
+	}
+
+	.breed-features__item.breed-features__item--appearance {
+		top: -330px;
+		left: -204px;
+	}
+
+	.breed-features__item.breed-features__item--weight {
+		top: -275px;
+		left: 605px;
+	}
+}
+
+.breed-features__item--trainable::after {
+	top: 1px;
+	left: -34px;
+}
+
+.breed-features__item--weight {
+	top: -224px;
+	left: 618px;
+	width: 175px;
+}
+
+.breed-features__item--weight::after {
+	top: 4px;
+	left: -33px;
+}
+
+.breed-features__item--appearance {
+	top: -311px;
+	left: -227px;
+	width: 230px;
+	text-align: right;
+}
+
+.breed-features__item--appearance::after {
+	top: 5px;
+	right: -32px;
+}
+
+.breed-features__photo {
+	position: relative;
+	z-index: 10;
+	left: 34px;
+	top: 5px;
+}
+
+.breed-features__photo::after {
+	position: absolute;
+	content: "";
+	left: -30px;
+	top: 53px;
+	width: 629px;
+	height: 629px;
+	padding: 54px;
+	border-radius: 50%;
+	background-color: #151313;
+	z-index: -1;
+	border: 1px solid #a07b50;
+	background-clip: content-box;
+	box-sizing: border-box;
 }
