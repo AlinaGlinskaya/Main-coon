@@ -105,6 +105,24 @@ a {
 	font-weight: 400;
 }
 
+.slider-button {
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 30px;
+	background-color: transparent;
+	border: none;
+	background-repeat: no-repeat;
+}
+
+.slider-button.slider-button--prev {
+	background-image: url("../img/arrowPrev.svg");
+}
+
+.slider-button.slider-button--next {
+	background-image: url("../img/arrowNext.svg");
+}
+
 @media (max-width: 767px) {
 	.title {
 		font-size: 28px;
@@ -611,23 +629,15 @@ a {
 	}
 
 	.pets__gallery-button {
-		position: absolute;
 		top: 556px;
 		display: block;
-		width: 15px;
-		height: 30px;
-		background-color: transparent;
-		border: none;
-		background-repeat: no-repeat;
 	}
 
 	.pets__gallery-button.slider-button--prev {
-		background-image: url("../img/arrowPrev.svg");
 		left: 27px;
 	}
 
 	.pets__gallery-button.slider-button--next {
-		background-image: url("../img/arrowNext.svg");
 		right: 27px;
 	}
 
@@ -1039,9 +1049,10 @@ a {
 
 @media (max-width: 767px) {
 	.breed-features__photo {
-		left: 16px;
-		top: 9px;
-		width: 268px;
+		left: 0;
+		top: 0;
+		width: 78%;
+		margin: 0 auto;
 	}
 }
 
@@ -1546,5 +1557,103 @@ a {
 	}
 }
 
+/*Team*/
+
+.team {
+	min-height: 694px;
+	background-color: #151313;
+}
+
+.team__slider-button.slider-button--next {
+	right: 4%;
+	top: 65%;
+	opacity: 0.5;
+}
+
+.team__slider-button.slider-button--prev {
+	left: 4%;
+	top: 65%;
+	opacity: 0.5;
+}
+
+.slider__slide {
+	display: flex;
+}
+
+.team__wrapper {
+	position: relative;
+	padding-top: 55px;
+}
+
+.team__slider-wrapper {
+	width: 100%;
+	padding-left: 12%;
+	padding-right: 4%;
+}
+
+.team__title {
+	margin-bottom: 20px;
+}
+
+.team__part-wrapper {
+	border: 1px solid rgba(160, 123, 80, 0.4);
+	padding: 22px 33px 20px 42px;
+	margin-left: -45px;
+	width: 65%;
+}
+
+.team__part {
+	background-color: #1f1c1d;
+	min-height: 356px;
+	max-width: 625px;
+	padding: 53px 50px 30px 39px
+}
+
+.team__image-wrapper {
+	z-index: 10;
+}
+
+.team__social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 37px;
+	margin-top: 42px;
+}
+
+.team__social li {
+	margin-right: 9px;
+}
+
+.team__lead {
+	width: 520px;
+	margin: 0 auto 24px;
+	color: #a07b50;
+	text-align: center;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 400;
+}
+
+.team__part cite {
+	color: #a07b50;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	font-style: normal;
+}
+
+.team__part cite span {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.team__part p {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.5);
+}
 
 
